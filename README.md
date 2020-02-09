@@ -8,12 +8,12 @@ map, based on the interesting article
 
 The page can be reached at the following address:
 
-    [http://coronavirus-spreading-map.brainstorm.it](http://coronavirus-spreading-map.brainstorm.it)
+[http://coronavirus-spreading-map.brainstorm.it](http://coronavirus-spreading-map.brainstorm.it)
 
-![screenshot](etc/screenshot.png)
+[<img src="etc/screenshot.png">](http://coronavirus-spreading-map.brainstorm.it)
 
 
-The site doesn't require a database, and doesn't provide any admin.
+The site doesn't require any database, nor provides any admin page.
 
 Thanks to it's modularity, it's so easy to use Django as a mini-framework:
 just remove unused features from settings.
