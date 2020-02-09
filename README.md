@@ -3,13 +3,12 @@ Coronavirus Spreading Map
 =========================
 
 Just for fun, I published a single-page site showing the Coronavirus spreading
-map, based on the interesting article <a href="https://www.geodose.com/2020/02/tracking-coronavirus-python-map.html">Interactive Coronavirus Spreading Map in Python</a> by Ideagora.
+map, based on the interesting article
+[Interactive Coronavirus Spreading Map in Python](https://www.geodose.com/2020/02/tracking-coronavirus-python-map.html) by Ideagora.
 
 The page can be reached at the following address:
 
-    http://coronavirus-spreading-map.brainstorm.it
-
-[http://coronavirus-spreading-map.brainstorm.it](http://coronavirus-spreading-map.brainstorm.it)
+    [http://coronavirus-spreading-map.brainstorm.it](http://coronavirus-spreading-map.brainstorm.it)
 
 ![screenshot](etc/screenshot.png)
 
@@ -28,10 +27,10 @@ Local installation
 
 For example (using virtualenvwrapper):
 
-.. code :: bash
-
+```
     mkvirtualenv coronavirus-spreading-map
     pip install -r requirements/base.txt
     python manage.py runserver
+```
 
 then visit http://127.0.0.1:8000/
