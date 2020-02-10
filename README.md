@@ -34,3 +34,19 @@ For example (using virtualenvwrapper):
 ```
 
 then visit http://127.0.0.1:8000/
+
+Deployment on production server
+-------------------------------
+
+List a target server you have access to in file `etc/deployment/hosts`, then:
+
+```
+cd etc/deployment
+ansible-playbook -v -i hosts deployment.yml
+```
+
+Requires Ansible:
+
+```
+pip install ansible
+```

@@ -1,0 +1,6 @@
+---
+nickname: production
+version: master
+standalone_host: False
+use_ssl: False
+apt_update_cache: False

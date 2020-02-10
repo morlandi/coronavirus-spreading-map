@@ -1,0 +1,5 @@
+[servers:children]
+production
+
+[production]
+coronavirus-spreading-map.brainstorm.it      username=coronavirus-spreading-map

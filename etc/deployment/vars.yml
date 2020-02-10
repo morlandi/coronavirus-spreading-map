@@ -1,0 +1,34 @@
+use_gunicorn: true
+
+usergroup: '{{username}}'
+home: '/home/{{username}}'
+project_name: "coronavirus-spreading-map"
+project_instance: "{{username}}"
+
+#
+# Provisioning variables
+#
+
+project_packages:
+
+    - python3-venv
+    - python3-dev
+
+
+#
+# Deployment variables
+#
+
+project:
+    root: "{{home}}"
+    website_home: "{{home}}/{{project_name}}"
+    repo: https://github.com/morlandi/coronavirus-spreading-map.git
+    virtualenv: "{{home}}/python"
+    pythonpath: "{{home}}/python/bin"
+    settings_folder: "{{home}}/{{project_name}}/main"
+    settings_module: "main.settings"
+    socketpath: "{{home}}/run"
+    logto: "{{home}}/logs"
+
+    supervised_services:
+        - "{{project_instance}}_server"
